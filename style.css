@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto',sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #fcb31b;
+}
+
+main {
+    /* background-color: red; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.screen {
+    padding: 0 10px;
+   height: 120px;
+   background-color: #3b3b3b;
+   border-radius: 10px;
+   text-align: right;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+}
+
+.btn-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+
+.operate {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+.btn-1 {
+    color: white;
+    height: 68px;
+    font-size: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #616161;
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 5px 5px 0px;
+}
+
+#btn {
+    color: white;
+    cursor: pointer;
+    width: 81px;
+    height: 68px;
+    text-align: center;
+    padding: 20px;
+    gap: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #616161;
+    box-shadow: rgba(0, 0, 0, 0.5) 4px 5px 5px 0px;
+}
