@@ -9,26 +9,28 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-    background-color: #fcb31b;
+    margin-top: 10%;
+    background-color: #ffb178;
+    /* gap: 100px; */
 }
 
-main {
-    /* background-color: red; */
-}
+/* main {
+    background-color: red;    
+} */
 
 .container {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    background-color: black;
+    background-color: #253443;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .screen {
     padding: 0 10px;
    height: 120px;
-   background-color: #3b3b3b;
+   background-color: #253443;
    border-radius: 10px;
    text-align: right;
    display: flex;
@@ -40,34 +42,39 @@ main {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 10px;
+    max-width: 330px;
 }
 
-.operate {
-    display: grid;
-    grid-template-columns: auto auto;
-    gap: 10px;
-}
-
-.btn-1 {
-    color: white;
-    height: 68px;
-    font-size: 20px;
-    border-radius: 10px;
-    cursor: pointer;
-    background-color: #616161;
-    box-shadow: rgba(0, 0, 0, 0.5) 4px 5px 5px 0px;
-}
-
-#btn {
+.btn {
     color: white;
     cursor: pointer;
-    width: 81px;
-    height: 68px;
+    width: 65px;
+    height: 64px;
     text-align: center;
     padding: 20px;
     gap: 20px;
     font-size: 20px;
+    border: none;
     border-radius: 10px;
-    background-color: #616161;
-    box-shadow: rgba(0, 0, 0, 0.5) 4px 5px 5px 0px;
+    background-color: #253443;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.btn:hover {
+    transform: translateY(2px);
+    background-color: #2b3d4e;
+}
+
+#equal {
+    grid-column: 3 / span 2;
+    background-color: #eb822d;
+    width: auto;
+}
+
+#equal:hover {
+    background-color: #e17015;
+}
+
+.orange {
+    color: #eb822d;
 }
