@@ -53,19 +53,25 @@ del.addEventListener('click', ()=> {
 })
 
 //clear function
-clear.addEventListener('click', ()=> {
+function clearScreen() {
     result.textContent = '0'
-    op.textContent = '';
+    op.textContent = '0';
     firstNum = '';
     lastNum = '';
     currentOperator = null;
-})
+}
+clear.addEventListener('click', clearScreen)
 
 //evaluate function
 equal.addEventListener('click', evaluate)
 function evaluate() {
     if(currentOperator === null || reset) return
     lastNum = result.textContent;
+    if(currentOperator == '/' && lastNum == '0'){
+        alert('cant divide with zero!');
+        clearScreen();
+        return;
+    }
     let theResult = operate(currentOperator, firstNum, lastNum);
     if(theResult % 1 == 0) {
         result.textContent = theResult;
