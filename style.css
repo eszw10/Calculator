@@ -11,12 +11,7 @@ body {
     justify-content: space-around;
     margin-top: 5%;
     background-color: #ffb178;
-    /* gap: 100px; */
 }
-
-/* main {
-    background-color: red;    
-} */
 
 .container {
     display: flex;
@@ -25,17 +20,23 @@ body {
     background-color: #253443;
     padding: 20px;
     border-radius: 30px;
+    height: auto;
+    max-width: 330px;
 }
 
 .screen {
     padding: 0 10px;
-   height: 120px;
-   background-color: #253443;
-   border-radius: 10px;
-   text-align: right;
-   display: flex;
-   flex-direction: column;
-   justify-content: space-around;
+    border-radius: 10px;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    word-wrap: break-word;
+}
+
+.screen p {
+    max-width: 270px;
+    word-wrap: break-word;
 }
 
 .btn-container {
